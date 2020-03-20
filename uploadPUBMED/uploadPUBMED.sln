@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uploadPUBMED", "uploadPUBMED\uploadPUBMED.csproj", "{721FB005-5A32-4862-BA47-4E1BC2F76AFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{721FB005-5A32-4862-BA47-4E1BC2F76AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{721FB005-5A32-4862-BA47-4E1BC2F76AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{721FB005-5A32-4862-BA47-4E1BC2F76AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{721FB005-5A32-4862-BA47-4E1BC2F76AFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E2AA29C-161E-4CFD-99F3-867293B103E3}
+	EndGlobalSection
+EndGlobal

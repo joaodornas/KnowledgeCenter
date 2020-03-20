@@ -1,0 +1,31 @@
+
+2 Conformance
+
+2.1 General
+
+Conforming PDF files shall adhere to all requirements of the ISO 32000-1 specification and a conforming file is not obligated to use any 
+feature other than those explicitly required by ISO 32000-1.
+
+NOTE 
+
+1 The proper mechanism by which a file can presumptively identify itself as being a PDF file of a given version level is described in 7.5.2, 
+"File Header".
+
+2.2 Conforming readers
+
+A conforming reader shall comply with all requirements regarding reader functional behaviour specified in ISO 32000-1. The requirements of 
+ISO 32000-1 with respect to reader behaviour are stated in terms of general functional requirements applicable to all conforming readers. 
+ISO 32000-1 does not prescribe any specific technical design, user interface or implementation details of conforming readers. The rendering 
+of conforming files shall be performed as defined by ISO 32000-1.
+
+2.3 Conforming writers
+
+A conforming writer shall comply with all requirements regarding the creation of PDF files as specified in ISO 32000-1. The requirements of 
+ISO 32000-1 with respect to writer behaviour are stated in terms of general functional requirements applicable to all conforming writers 
+and focus on the creation of conforming files. ISO 32000-1 does not prescribe any specific technical design, user interface or implementation 
+details of conforming writers.
+
+2.4 Conforming products
+
+A conforming product shall comply with all requirements regarding the creation of PDF files as specified in ISO 32000-1 as well as comply 
+with all requirements regarding reader functional behavior specified in ISO 32000-1.

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "checkXMLData", "checkXMLData.csproj", "{43974A00-BAB0-49D0-9281-A50EBC9F4C3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43974A00-BAB0-49D0-9281-A50EBC9F4C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43974A00-BAB0-49D0-9281-A50EBC9F4C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43974A00-BAB0-49D0-9281-A50EBC9F4C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43974A00-BAB0-49D0-9281-A50EBC9F4C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A40E5B6-7E9B-4408-BE69-F64F6168524B}
+	EndGlobalSection
+EndGlobal

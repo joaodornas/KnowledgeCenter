@@ -1,0 +1,78 @@
+﻿
+ANNEX C - IMPLEMENTATION LIMITS (NORMATIVE)
+
+C.1 General
+
+In general, PDF does not restrict the size or quantity of things described in the file format, such as numbers, 
+arrays, images, and so on. However, a conforming reader running on a particular processor and in a particular 
+operating environment does have such limits. If a conforming reader encounters a PDF construct that exceeds one 
+of these limits or performs a computation whose intermediate results exceed a limit, an error occurs.
+
+NOTE
+PostScript interpreters also have implementation limits, listed in Appendix B of the PostScript Language Reference, 
+Third Edition. It is possible to construct a PDF file that does not violate PDF implementation limits but fails to 
+print on a PostScript printer. Keep in mind that these limits vary according to the PostScript LanguageLevel, 
+interpreter version, and the amount of memory available to the interpreter.
+
+This annex describes typical limits for a conforming PDF application (readers and writers). These limits fall into 
+two main classes:
+
+• Architectural limits. The hardware on which a conforming reader executes imposes certain constraints. 
+For example, an integer is usually represented in 32 bits, limiting the range of allowed integers. 
+In addition, the design of the software imposes other constraints, such as a limit to the number of elements 
+in an array or string.
+
+• Memory limits. The amount of memory available to a conforming reader limits the number of memory-consuming 
+objects that can be held simultaneously.
+
+C.2 Architectural limits
+
+PDF itself has one architectural limit: Because a cross-reference table (see 7.5.4, "Cross-Reference Table") 
+allocates ten digits to represent byte offsets, the size of a file shall be limited to 1010 bytes (approximately 
+10 gigabytes). This limit does not apply in a PDF file that uses a cross-reference stream (see 7.5.8, 
+"Cross-Reference Streams") instead of a cross reference table.
+
+Table C.1 describes the minimum architectural limits that should be accommodated by conforming readers running 
+on 32-bit machines. Because conforming readers may be subject to these limits, conforming writers producing PDF 
+files should remain within them.
+
+NOTE
+Memory limits are often exceeded before architectural limits (such as the limit on the number of indirect objects) 
+are reached.
+
+[see Table C.1 Images]
+Table C.1 – Architectural limits
+
+Additionally, conforming writers should adhere to the following constraints, and conforming readers should 
+accommodate PDF files that obey the constraints.
+
+•Thumbnail images should be no larger than 106 by 106 samples, and should be created at one-eighth scale 
+for 8.5-by-11-inch and A4-size pages.
+
+•The minimum page size should be 3 by 3 units in default user space; the maximum should be 14,400 by 14,400 units. 
+In versions of PDF earlier than 1.6, the size of the default user space unit was fixed at 1⁄72 inch, yielding a 
+minimum of approximately 0.04 by 0.04 inch and a maximum of 200 by 200 inches. Beginning with PDF 1.6, the size 
+of the unit may be set on a page-by-page basis; the default remains at 1/72 inch.
+
+•The magnification factor of a view should be constrained to be between approximately 8 percent and 6400 percent.
+
+•When a conforming reader reads a PDF file with a damaged or missing cross-reference table, it may attempt to 
+rebuild the table by scanning all the objects in the file. However, the generation numbers of deleted entries are 
+lost if the cross-reference table is missing or severely damaged. To facilitate such reconstruction, object 
+identifiers, the endobj keyword, and the endstream keyword should appear at the start of a line. Also, the data 
+within a stream should not contain a line beginning with the word endstream, aside from the required endstream that 
+delimits the end of the stream.
+
+C.3 Memory limits
+
+Memory limits cannot be characterized as precisely as architectural limits because the amount of available 
+memory and the ways in which it is allocated vary from one conforming product to another.
+
+NOTE
+Memory is automatically reallocated from one use to another when necessary: when more memory is needed for a 
+particular purpose, it can be taken from memory allocated to another purpose if that memory is currently unused 
+or its use is nonessential (a cache, for example). Also, data is often saved to a temporary file when memory is 
+limited. Because of this behaviour, it is not possible to state limits for such items as the number of pages in 
+a document, number of text annotations or hypertext links on a page, number of graphics objects on a page, or 
+number of fonts on a page or in a document.
+

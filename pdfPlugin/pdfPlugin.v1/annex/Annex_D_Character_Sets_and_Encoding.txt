@@ -1,0 +1,97 @@
+
+ANNEX D - CHARACTER SETS AND ENCODING (NORMATIVE)
+
+D.1 General
+
+This annex lists the character sets and encodings that shall be predefined in any conforming reader. Simple fonts, encompassing 
+Latin text and some symbols, are described here. See 9.7.5.2, "Predefined CMaps" for a list of predefined CMaps for CID-keyed fonts.
+
+D.2, "Latin Character Set and Encodings", describes the entire character set for the Adobe standard Latin-text fonts. 
+This character set shall be supported by the Times, Helvetica, and Courier font families, which are among the standard 14 
+predefined fonts; see 9.6.2.2, "Standard Type 1 Fonts (Standard 14 Fonts)". For each named character, an octal character code 
+is defined for four different encodings: StandardEncoding, MacRomanEncoding, WinAnsiEncoding, and PDFDocEncoding (see Table D.1). 
+Unencoded characters are indicated by a dash (—).
+
+D.3, "PDFDocEncoding Character Set", describes the entire set of characters that can be represented using PDFDocEncoding. 
+It presents these characters in numerical order and it describes the Unicode representation of each character. This table overlaps 
+the information presented in D.2, "Latin Character Set and Encodings", with respect to the presented octal character codes.
+
+D.4, "Expert Set and MacExpertEncoding", describes the “expert” character set, which contains additional characters useful for 
+sophisticated typography, such as small capitals, ligatures, and fractions. For each named character, an octal character code is 
+given in MacExpertEncoding.
+
+NOTE 
+The built-in encoding in an expert font program may be different from MacExpertEncoding.
+
+D.5, "Symbol Set and Encoding", and D.6, "ZapfDingbats Set and Encoding", describe the character sets and built-in encodings for 
+the Symbol and ZapfDingbats (ITC Zapf Dingbats) font programs, which shall be among the standard 14 predefined fonts. These fonts 
+have built-in encodings that are unique to each font. The characters for ZapfDingbats are ordered by code instead of by name, since 
+the names in that font are meaningless.
+
+Table D.1 – Latin-text encodings
+
+		[Encoding]							[Description]
+
+		StandardEncoding					Adobe standard Latin-text encoding. This is the built-in encoding defined in Type 1 Latin-text font programs 
+											(but generally not in TrueType font programs). Conforming readers shall not have a predefined encoding named StandardEncoding. 
+											However, it is necessary to describe this encoding, since a font’s built-in encoding can be used as the base encoding from which 
+											differences may be specified in an encoding dictionary.
+
+
+		MacRomanEncoding					Mac OS standard encoding for Latin text in Western writing systems. Conforming readers shall have a predefined encoding named 
+											MacRomanEncoding that may be used with both Type 1 and TrueType fonts.
+
+		WinAnsiEncoding						Windows Code Page 1252, often called the “Windows ANSI” encoding. This is the standard Windows encoding for Latin text in Western 
+											writing systems. Conforming readers shall have a predefined encoding named WinAnsiEncoding that may be used with both Type 1 and 
+											TrueType fonts.
+
+		PDFDocEncoding						Encoding for text strings in a PDF document outside the document’s content streams. This is one of two encodings 
+											(the other being Unicode) that may be used to represent text strings; see 7.9.2.2, "Text String Type". PDF does not have a 
+											predefined encoding named PDFDocEncoding; it is not customary to use this encoding to show text from fonts.
+
+		MacExpertEncoding					An encoding for use with expert fonts—ones containing the expert character set. Conforming readers shall have a predefined 
+											encoding named MacExpertEncoding. Despite its name, it is not a platform-specific encoding; however, only certain fonts have 
+											the appropriate character set for use with this encoding. No such fonts are among the standard 14 predefined fonts.
+
+D.2 Latin Character Set and Encodings
+
+1. In PDF 1.3, the euro character was added to the Adobe standard Latin character set. It shall be encoded as 200 in 
+WinAnsiEncoding and 240 in PDFDocEncoding, assigning codes that were previously unused. Apple changed the Mac OS Latin-text 
+encoding for code 333 from the currency character to the euro character. However, this incompatible change has not been reflected 
+in PDF’s MacRomanEncoding, which shall continue to map code 333 to currency. If the euro character is desired, an encoding dictionary 
+may be used to specify this single difference from MacRomanEncoding.
+
+2. In PDF 1.3, the existing Zcaron and zcaron characters were added to WinAnsiEncoding as the previously unused codes 216 and 236.
+
+3. In WinAnsiEncoding, all unused codes greater than 40 map to the bullet character. However, only code 225 shall be specifically 
+assigned to the bullet character; other codes are subject to future reassignment.
+
+4. The character names guillemotleft and guillemotright are misspelled. The correct spelling for this punctuation character is 
+guillemet. However, the misspelled names are the ones actually used in the fonts and encodings containing these characters.
+
+5. The hyphen character is also encoded as 255 in WinAnsiEncoding. The meaning of this duplicate code shall be “soft hyphen,” 
+but it shall be typographically the same as hyphen.
+
+6. The SPACE character shall also be encoded as 312 in MacRomanEncoding and as 240 in WinAnsiEncoding. This duplicate code 
+shall signify a nonbreaking space; it shall be typographically the same as (U+003A) SPACE.
+
+[see Table D.2 Images]
+Table D.2 – PDFDocEncoding Character Set
+
+
+D.3 PDFDocEncoding Character Set
+
+The column titled Notes uses the following abbreviations:
+U	Undefined code point in PDFDocEncoding
+SR	Unicode codepoint that may require special representation in XML in some contexts.
+
+[see Table D.4 Images]
+D.4 Expert Set and MacExpertEncoding
+
+[see Table D.5 Images]
+D.5 Symbol Set and Encoding
+
+[see Table D.6 Images]
+D.6 ZapfDingbats Set and Encoding
+
+

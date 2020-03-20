@@ -1,0 +1,20 @@
+
+ANNEX B - OPPERATORS IN TYPE 4 FUNCTION (NORMATIVE)
+
+B.1 General
+
+This annex summarizes the PostScript operators that may appear in a type 4 function, as discussed in 7.10.5, 
+"Type 4 (PostScript Calculator) Functions". For details on these operators, see the PostScript Language Reference, 
+Third Edition.
+
+[see Table B.2 Images]
+B.2 Arithmetic Operators
+
+[see Table B.3 Images]
+B.3 Relational, Boolean, and Bitwise Operators
+
+[see Table B.4 Images]
+B.4 Conditional Operators
+
+[see Table B.5 Images]
+B.5 Stack Operators

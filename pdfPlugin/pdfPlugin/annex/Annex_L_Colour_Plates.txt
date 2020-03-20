@@ -1,0 +1,70 @@
+
+
+ ANNEX L - COLOUR PLATES (INFORMATIVE)
+
+[pag 733]
+L.1 COLOUR PLATES
+
+This annex consists of figures that logically belong in other parts of this specification. 
+They are collected here so that all colour figures appear together as a sequence of colour plates that may be produced separately from the remainder of the specification.
+
+[pag 733]
+Figure L.1 – Additive and subtractive colour (8.6.4, "Device Colour Spaces")
+
+[pag 734]
+Figure L.2 – Uncalibrated colour (8.6.5, "CIE-Based Colour Spaces")
+
+[pag 734]
+Figure L.3 – Lab colour space (8.6.5.4, "Lab Colour Spaces")
+
+[pag 735]
+Figure L.4 – Color gamuts (8.6.5.4, "Lab Colour Spaces")
+
+[pag 735]
+Figure L.5 – Rendering intents (8.6.5.8, "Rendering Intents")
+
+[pag 736]
+Figure L.6 – Duotone image (8.6.6.5, "DeviceN Colour Spaces")
+
+[pag 736]
+Figure L.7 – Quadtone image (8.6.6.5, "DeviceN Colour Spaces")
+
+[pag 737]
+Figure L.8 – Colored tiling pattern (8.7.3.2, "Coloured Tiling Patterns")
+
+[pag 737]
+Figure L.9 – Uncoloured tiling pattern (8.7.3.3, "Uncoloured Tiling Patterns")
+
+[pag 738]
+Figure L.10 – Axial shading (8.7.4.5.3, "Type 2 (Axial) Shadings")
+
+[pag 738]
+Figure L.11 – Radial shadings depicting a cone (8.7.4.5.4, "Type 3 (Radial) Shadings")
+
+[pag 739]
+Figure L.12 – Radial shadings depicting a sphere (8.7.4.5.4, "Type 3 (Radial) Shadings")
+
+[pag 739]
+Figure L.13 – Radial shadings with extension (8.7.4.5.4, "Type 3 (Radial) Shadings")
+
+[pag 739]
+Figure L.14 – Radial shading effect (8.7.4.5.4, "Type 3 (Radial) Shadings")
+
+[pag 740]
+Figure L.15 – Coons patch mesh (8.7.4.5.7, "Type 6 Shadings (Coons Patch Meshes)")
+
+[pag 741]
+Figure L.16 – Transparency groups (11.2, "Overview of Transparency")
+
+[pag 741]
+Figure L.17 – Isolated and knockout groups (11.4.5, "Isolated Groups" and 11.4.6, "Knockout Groups")
+
+[pag 742]
+Figure L.18 – RGB blend modes (11.3.5, "Blend Mode")
+
+[pag 743]
+Figure L.19 – CMYK blend modes (11.3.5, "Blend Mode")
+
+[pag 744]
+Figure L.20 – Blending and overprinting (11.7.4.3, "Compatibility with Opaque Overprinting")
+

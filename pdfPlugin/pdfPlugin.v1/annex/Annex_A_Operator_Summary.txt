@@ -1,0 +1,15 @@
+
+ANNEX A - OPERATOR SUMMARY (INFORMARTIVE)
+
+A.1 General
+
+This annex lists, in alphabetical order, all the operators that may be used in PDF content streams.
+
+A.2 PDF Content Stream Operators
+
+Table A.1 lists each operator, its corresponding PostScript language operators (when it is an exact or near-exact 
+equivalent of the PDF operator), a description of the operator, and references to the table and page where each 
+operator is introduced.
+
+[see Table A.1 Images]
+Table A.1 – PDF content stream operators

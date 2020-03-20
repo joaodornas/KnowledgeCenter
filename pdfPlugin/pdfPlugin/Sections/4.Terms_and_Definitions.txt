@@ -1,0 +1,210 @@
+
+4 Terms and definitions
+
+For the purposes of this document, these terms and definitions apply.
+
+4.1
+… (ellipsis)
+An ellipsis is used within PDF examples to indicate omitted detail. Pairs of ellipses are also used to bracket comments, in italic, about such omitted detail.
+
+4.2
+8-bit value
+(see byte)
+
+4.3
+array object
+a one-dimensional collection of objects arranged sequentially and implicitly numbered starting at 0
+
+4.4
+ASCII
+the American Standard Code for Information Interchange, a widely used convention for encoding a specific set of 128 characters as binary numbers defined in ANSI X3.4-1986
+
+4.5
+binary data
+an ordered sequence of bytes
+
+4.6
+boolean objects
+either the keyword true or the keyword false
+
+4.7
+byte
+a group of 8 binary digits which collectively can be configured to represent one of 256 different values and various realizations of the 8 binary digits are widely used in today's electronic equipment
+
+4.8
+catalog
+the primary dictionary object containing references directly or indirectly to all other objects in the document with the exception that there may be objects in the trailer that are not referred to by the catalog
+
+4.9
+character
+numeric code representing an abstract symbol according to some defined character encoding rule
+
+NOTE 
+
+1 There are three manifestations of characters in PDF, depending on context:
+
+	•	A PDF file is represented as a sequence of 8-bit bytes, some of which are interpreted as character codes in the ASCII character set and some of which are treated as arbitrary binary data depending upon the context.
+	
+	•	The contents (data) of a string or stream object in some contexts are interpreted as character codes in the PDFDocEncoding or UTF-16 character set.
+	
+	•	The contents of a string within a PDF content stream in some situations are interpreted as character codes that select glyphs to be drawn on the page according to a character encoding that is associated with the text font.
+
+4.10
+character set
+a defined set of symbols each assigned a unique character value
+
+4.11
+conforming reader
+software application that is able to read and process PDF files that have been made in conformance with this specification and that itself conforms to requirements of conforming readers specified here [ISO 32000-1]
+
+4.12
+conforming product
+software application that is both a conforming reader and a conforming writer
+
+4.13
+conforming writer
+software application that is able to write PDF files that conform to this specification [ISO 32000-1]
+
+4.14
+content stream
+stream object whose data consists of a sequence of instructions describing the graphical elements to be painted on a page
+
+4.15
+cross reference table
+data structure that contains the byte offset start for each of the indirect objects within the file
+
+4.16
+developer
+Any entity, including individuals, companies, non-profits, standards bodies, open source groups, etc., who are developing standards or software to use and extend ISO 32000-1.
+
+4.17
+dictionary object
+an associative table containing pairs of objects, the first object being a name object serving as the key and the second object serving as the value and may be any kind of object including another dictionary
+
+4.18
+direct object
+any object that has not been made into an indirect object
+
+4.19
+electronic document
+electronic representation of a page-oriented aggregation of text, image and graphic data, and metadata useful to identify, understand and render that data, that can be reproduced on paper or displayed without significant loss of its information content
+
+4.20
+end-of-line marker (EOL marker)
+one or two character sequence marking the end of a line of text, consisting of a CARRIAGE RETURN character (0Dh) or a LINE FEED character (0Ah) or a CARRIAGE RETURN followed immediately by a LINE FEED
+
+4.21
+FDF file
+File conforming to the Forms Data Format containing form data or annotations that may be imported into a PDF file (see 12.7.7, “Forms Data Format”)
+
+4.22
+filter
+an optional part of the specification of a stream object, indicating how the data in the stream should be decoded before it is used
+
+4.23
+font
+identified collection of graphics that may be glyphs or other graphic elements [ISO 15930-4]
+
+4.24
+function
+a special type of object that represents parameterized classes, including mathematical formulas and sampled representations with arbitrary resolution
+
+4.25
+glyph
+recognizable abstract graphic symbol that is independent of any specific design [ISO/IEC 9541-1]
+
+4.26
+graphic state
+the top of a push down stack of the graphics control parameters that define the current global framework within which the graphics operators execute
+
+4.27
+ICC profile
+colour profile conforming to the ICC specification [ISO 15076-1:2005]
+
+4.28
+indirect object
+an object that is labeled with a positive integer object number followed by a non-negative integer generation number followed by obj and having endobj after it
+
+4.29
+integer object
+mathematical integers with an implementation specified interval centered at 0 and written as one or more decimal digits optionally preceded by a sign
+
+4.30
+name object
+an atomic symbol uniquely defined by a sequence of characters introduced by a SOLIDUS (/), (2Fh) but the SOLIDUS is not considered to be part of the name
+
+4.31
+name tree
+similar to a dictionary that associates keys and values but the keys in a name tree are strings and are ordered
+
+4.32
+null object
+a single object of type null, denoted by the keyword null, and having a type and value that are unequal to those of any other object
+
+4.33
+number tree
+similar to a dictionary that associates keys and values but the keys in a number tree are integers and are ordered
+
+4.34
+numeric object
+either an integer object or a real object
+
+4.35
+object
+a basic data structure from which PDF files are constructed and includes these types: array, Boolean, dictionary, integer, name, null, real, stream and string
+
+4.36
+object reference
+an object value used to allow one object to refer to another; that has the form “<n> <m> R” where <n> is an indirect object number, <m> is its version number and R is the uppercase letter R
+
+4.37
+object stream
+a stream that contains a sequence of PDF objects
+
+4.38
+PDF
+Portable Document Format file format defined by this specification [ISO 32000-1]
+
+4.39
+real object
+approximate mathematical real numbers, but with limited range and precision and written as one or more decimal digits with an optional sign and a leading, trailing, or embedded PERIOD (2Eh) (decimal point)
+
+4.40
+rectangle
+a specific array object used to describe locations on a page and bounding boxes for a variety of objects and written as an array of four numbers giving the coordinates of a pair of diagonally opposite corners, typically in the form [ llx lly urx ury ] specifying the lower-left x, lower-left y, upper-right x, and upper-right y coordinates of the rectangle, in that order
+
+4.41
+resource dictionary
+associates resource names, used in content streams, with the resource objects themselves and organized into various categories (e.g., Font, ColorSpace, Pattern)
+
+4.42
+space character
+text string character used to represent orthographic white space in text strings
+
+NOTE 
+
+2 space characters include HORIZONTAL TAB (U+0009), LINE FEED (U+000A), VERTICAL TAB (U+000B), FORM FEED (U+000C), CARRIAGE RETURN (U+000D), SPACE (U+0020), NOBREAK SPACE (U+00A0), EN SPACE (U+2002), EM SPACE (U+2003), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), ZERO WIDTH SPACE (U+200B), and IDEOGRAPHIC SPACE (U+3000)
+
+4.43
+stream object
+consists of a dictionary followed by zero or more bytes bracketed between the keywords stream and endstream
+
+4.44
+string object
+consists of a series of bytes (unsigned integer values in the range 0 to 255) and the bytes are not integer objects, but are stored in a more compact form
+
+4.45
+web capture
+refers to the process of creating PDF content by importing and possibly converting internet-based or locally-resident files. The files being imported may be any arbitrary format, such as HTML, GIF, JPEG, text, and PDF
+
+4.46
+white-space character
+characters that separate PDF syntactic constructs such as names and numbers from each other; white space characters are HORIZONTAL TAB (09h), LINE FEED (0Ah), FORM FEED (0Ch), CARRIAGE RETURN (0Dh), SPACE (20h); (see Table 1 in 7.2.2, “Character Set”)
+
+4.47
+XFDF file
+file conforming to the XML Forms Data Format 2.0 specification, which is an XML transliteration of Forms Data Format (FDF)
+
+4.48
+XMP packet
+structured wrapper for serialized XML metadata that can be embedded in a wide variety of file formats

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1BF750DA-0F25-4FF6-8B01-EB123F5A2DA4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>pdfPlugin</RootNamespace>
+    <AssemblyName>pdfPlugin</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ImageProcessor, Version=2.7.0.100, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageProcessor.2.7.0.100\lib\net452\ImageProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Document_Interchange.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="Graphics.cs" />
+    <Compile Include="Interactive_Features.cs" />
+    <Compile Include="plugin.cs" />
+    <Compile Include="Multimedia_Features.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rendering.cs" />
+    <Compile Include="Syntax.cs" />
+    <Compile Include="Text.cs" />
+    <Compile Include="tools.cs" />
+    <Compile Include="Transparency.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Annex\Annex_A_Operator_Summary.txt" />
+    <Content Include="Annex\Annex_B_Operators_in_Type_4_Functions.txt" />
+    <Content Include="Annex\Annex_C_Implementation_Limits.txt" />
+    <Content Include="Annex\Annex_D_Character_Sets_and_Encoding.txt" />
+    <Content Include="Annex\Annex_E_PDF_Name_Registry.txt" />
+    <Content Include="Annex\Annex_F_Linearized_PDF.txt" />
+    <Content Include="Annex\Annex_G_Linearized_PDF_Access_Strategies.txt" />
+    <Content Include="Annex\Annex_H_Example_PDF_Files.txt" />
+    <Content Include="Annex\Annex_I_PDF_Versions.txt" />
+    <Content Include="Annex\Annex_J_FPF_Rename_Flag.txt" />
+    <Content Include="Annex\Annex_K_Postscript.txt" />
+    <Content Include="Annex\Annex_L_Colour_Plates.txt" />
+    <Content Include="Images\D.2 Latin Character Set and Encodings_part1.jpg" />
+    <Content Include="Images\D.2 Latin Character Set and Encodings_part2.jpg" />
+    <Content Include="Images\D.2 Latin Character Set and Encodings_part3.jpg" />
+    <Content Include="Images\D.2 Latin Character Set and Encodings_part4.jpg" />
+    <Content Include="Images\Figure 1 - PDF Components.png" />
+    <Content Include="Images\Figure H.1 - Output of the following example.png" />
+    <Content Include="Images\Figure H.2 - Page tree for the following example.jpg" />
+    <Content Include="Images\Figure H.3 - Document outline as displayed in Example 1.png" />
+    <Content Include="Images\Figure H.4 - Document outline as displayed in Example 2.jpg" />
+    <Content Include="Images\Figure H.5 - Table of Contents.png" />
+    <Content Include="Images\Figure H.6 - Association between content and marked content identifiers.png" />
+    <Content Include="Images\Figure H.7 - Hierarchy of structure and relationship with marked content.png" />
+    <Content Include="Images\Figure H.8 - Index.png" />
+    <Content Include="Images\Figure H.9 - Hierarchy of structure elements and relationship with marked content.png" />
+    <Content Include="Images\Figure L.1 - Additive and subtractive colour.jpg" />
+    <Content Include="Images\Figure L.10 - Axial shading.png" />
+    <Content Include="Images\Figure L.11 - Radial shadings depicting a cone.png" />
+    <Content Include="Images\Figure L.12 - Radial shadings depicting a sphere.png" />
+    <Content Include="Images\Figure L.13 - Radial shadings with extension.png" />
+    <Content Include="Images\Figure L.14 - Radial shading effect.png" />
+    <Content Include="Images\Figure L.15 - Coons patch mesh.png" />
+    <Content Include="Images\Figure L.16 - Transparency groups.png" />
+    <Content Include="Images\Figure L.17 - Isolated and knockout groups.png" />
+    <Content Include="Images\Figure L.18 - RGB blend modes.png" />
+    <Content Include="Images\Figure L.19 - CMYK blend modes.png" />
+    <Content Include="Images\Figure L.2 - Uncalibrated colour.jpg" />
+    <Content Include="Images\Figure L.20 - Blending and overprinting.png" />
+    <Content Include="Images\Figure L.3 - Lab colour space.jpg" />
+    <Content Include="Images\Figure L.4 - Color gamuts.jpg" />
+    <Content Include="Images\Figure L.5 - Rendering intents.jpg" />
+    <Content Include="Images\Figure L.6 - Doutone image.jpg" />
+    <Content Include="Images\Figure L.7 - Quadtone image.jpg" />
+    <Content Include="Images\Figure L.8 - Colored tiling pattern.png" />
+    <Content Include="Images\Figure L.9 - Uncoloured tiling pattern.png" />
+    <Content Include="Sections\1.Scope.txt" />
+    <Content Include="Sections\2.Conformance.txt" />
+    <Content Include="Sections\3.Normative.txt" />
+    <Content Include="Sections\4.Terms_and_Definitions.txt" />
+    <Content Include="Sections\5.Notation.txt" />
+    <Content Include="Sections\6.Version_Designations.txt" />
+    <Content Include="Sections\Bibliography.txt" />
+    <Content Include="Sections\Contents.txt" />
+    <Content Include="Sections\Foreword.txt" />
+    <Content Include="Sections\Introduction.txt" />
+    <Content Include="Tables\Table 1 - White-space Characters.png" />
+    <Content Include="Tables\Table 10 - Predictor Values.png" />
+    <Content Include="Tables\Table 11 - Optional parameters for the CCITTFaxDecode filter_part1.png" />
+    <Content Include="Tables\Table 11 - Optional parameters for the CCITTFaxDecode filter_part2.png" />
+    <Content Include="Tables\Table 2 - Delimiter Charasters.png" />
+    <Content Include="Tables\Table 3 - Escape sequences in literal strings.png" />
+    <Content Include="Tables\Table 4 - Examples of Literal Names.png" />
+    <Content Include="Tables\Table 5 - Entries common to all streams dictionaries_part1.png" />
+    <Content Include="Tables\Table 5 - Entries common to all streams dictionaries_part2.png" />
+    <Content Include="Tables\Table 6 - Standard Filters.png" />
+    <Content Include="Tables\Table 7 - Typical LZW encoding sequence_part1.png" />
+    <Content Include="Tables\Table 7 - Typical LZW encoding sequence_part2.png" />
+    <Content Include="Tables\Table 8 - Optinal paramters for LZWDecode and FlateDecode filters_part1.png" />
+    <Content Include="Tables\Table 8 - Optinal paramters for LZWDecode and FlateDecode filters_part2.png" />
+    <Content Include="Tables\Table 9 - PNG predictor algorithms.png" />
+    <Content Include="Tables\Table A.1 - PDF content stream operators_part1.png" />
+    <Content Include="Tables\Table A.1 - PDF content stream operators_part2.png" />
+    <Content Include="Tables\Table A.1 - PDF content stream operators_part3.png" />
+    <Content Include="Tables\Table B.2 - Arithmetic Operators.png" />
+    <Content Include="Tables\Table B.3 - Relational, Boolean, and Bitwise Operators_part1.png" />
+    <Content Include="Tables\Table B.3 - Relational, Boolean, and Bitwise Operators_part2.png" />
+    <Content Include="Tables\Table B.4 - Conditional Operators.png" />
+    <Content Include="Tables\Table B.5 - Stack Operators.png" />
+    <Content Include="Tables\Table C.1 - Architectural Limits_part1.png" />
+    <Content Include="Tables\Table C.1 - Architectural Limits_part2.png" />
+    <Content Include="Tables\Table D.2 - PDFDocEncoding Character Set - part1.jpg" />
+    <Content Include="Tables\Table D.2 - PDFDocEncoding Character Set - part2.jpg" />
+    <Content Include="Tables\Table D.2 - PDFDocEncoding Character Set - part3.jpg" />
+    <Content Include="Tables\Table D.2 - PDFDocEncoding Character Set - part4.jpg" />
+    <Content Include="Tables\Table D.2 - PDFDocEncoding Character Set - part5.jpg" />
+    <Content Include="Tables\Table D.2 - PDFDocEncoding Character Set - part6.jpg" />
+    <Content Include="Tables\Table D.2 - PDFDocEncoding Character Set - part7.jpg" />
+    <Content Include="Tables\Table D.2 - PDFDocEncoding Character Set - part8.jpg" />
+    <Content Include="Tables\Table D.2 - PDFDocEncoding Character Set - part9.jpg" />
+    <Content Include="Tables\Table D.4 - Expert Set and MacExpertEncoding_part1.jpg" />
+    <Content Include="Tables\Table D.4 - Expert Set and MacExpertEncoding_part2.jpg" />
+    <Content Include="Tables\Table D.4 - Expert Set and MacExpertEncoding_part3.jpg" />
+    <Content Include="Tables\Table D.5 - Symbol Set and Encoding_part1.jpg" />
+    <Content Include="Tables\Table D.5 - Symbol Set and Encoding_part2.jpg" />
+    <Content Include="Tables\Table D.5 - Symbol Set and Encoding_part3.jpg" />
+    <Content Include="Tables\Table D.6 - ZapfDingbats Set and Encoding_part1.png" />
+    <Content Include="Tables\Table D.6 - ZapfDingbats Set and Encoding_part2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

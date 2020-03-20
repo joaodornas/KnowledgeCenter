@@ -1,0 +1,68 @@
+
+Introduction
+
+ISO 32000 specifies a digital form for representing documents called the Portable Document Format or usually referred to as PDF. 
+PDF was developed and specified by Adobe Systems Incorporated beginning in 1993 and continuing until 2007 when this ISO standard was 
+prepared. The Adobe Systems version PDF 1.7 is the basis for this ISO 32000 edition. The specifications for PDF are backward inclusive, 
+meaning that PDF 1.7 includes all of the functionality previously documented in the Adobe PDF Specifications for versions 1.0 through 1.6. 
+It should be noted that where Adobe removed certain features of PDF from their standard, they too are not contained herein.
+
+The goal of PDF is to enable users to exchange and view electronic documents easily and reliably, independent of the environment in which 
+they were created or the environment in which they are viewed or printed. At the core of PDF is an advanced imaging model derived from the 
+PostScript® page description language. This PDF Imaging Model enables the description of text and graphics in a device-independent and 
+resolution-independent manner. To improve performance for interactive viewing, PDF defines a more structured format than that used by most 
+PostScript language programs. Unlike Postscript, which is a programming language, PDF is based on a structured binary file format that is 
+optimized for high performance in interactive viewing. PDF also includes objects, such as annotations and hypertext links, that are not part 
+of the page content itself but are useful for interactive viewing and document interchange.
+
+PDF files may be created natively in PDF form, converted from other electronic formats or digitized from paper, microform, or other hard 
+copy format. Businesses, governments, libraries, archives and other institutions and individuals around the world use PDF to represent 
+considerable bodies of important information.
+
+Over the past fourteen years, aided by the explosive growth of the Internet, PDF has become widely used for the electronic exchange of documents.
+There are several specific applications of PDF that have evolved where limiting the use of some features of PDF and requiring the use of others,
+enhances the usefulness of PDF. ISO 32000 is an ISO standard for the full function PDF; the following standards are for more specialized uses. 
+
+PDF/X (ISO 15930) is now the industry standard for the intermediate representation of printed material in electronic prepress systems for 
+conventional printing applications. PDF/A (ISO 19005) is now the industry standard for the archiving of digital documents. PDF/E (ISO 24517) 
+provides a mechanism for representing engineering documents and exchange of engineering data. As major corporations, government agencies, 
+and educational institutions streamline their operations by replacing paper-based workflow with electronic exchange of information, the impact 
+and opportunity for the application of PDF will continue to grow at a rapid pace.
+
+PDF, together with software for creating, viewing, printing and processing PDF files in a variety of ways, fulfils a set of requirements for 
+electronic documents including:
+
+	•	preservation of document fidelity independent of the device, platform, and software,
+
+	•	merging of content from diverse sources—Web sites, word processing and spreadsheet programs, scanned documents, photos, and 
+		graphics—into one self-contained document while maintaining the integrity of all original source documents,
+
+	•	collaborative editing of documents from multiple locations or platforms,
+
+	•	digital signatures to certify authenticity,
+
+	•	security and permissions to allow the creator to retain control of the document and associated rights,
+
+	•	accessibility of content to those with disabilities,
+
+	•	extraction and reuse of content for use with other file formats and applications, and
+
+	•	electronic forms to gather data and integrate it with business systems.
+
+The International Organization for Standardization draws attention to the fact that it is claimed that compliance with this 
+document may involve the use of patents concerning the creation, modification, display and processing of PDF files which are owned 
+by the following parties:
+
+	•	Adobe Systems Incorporated, 345 Park Avenue, San Jose, California,95110-2704, USA
+
+ISO takes no position concerning the evidence, validity and scope of these patent rights.
+
+The holders of these patent rights has assured the ISO that they are willing to negotiate licenses under reasonable and non-discriminatory 
+terms and conditions with applicants throughout the world. In this respect, the statements of the holders of these patent rights are registered 
+with ISO. Information may be obtained from those parties listed above.
+
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights other than those 
+identified above. ISO shall not be held responsible for identifying any or all such patent rights.
+
+A repository of referenced documents has been established by AIIM (http://www.aiim.org/pdfrefdocs). Not all referenced documents can be 
+found there because of copyright restrictions.
